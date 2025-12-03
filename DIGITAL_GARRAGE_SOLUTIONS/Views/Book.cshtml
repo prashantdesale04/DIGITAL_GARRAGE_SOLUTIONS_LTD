@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <header>
+        <div class="logo">E-Garage</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="book.html" class="active">Book</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="book-section">
+        <h1>Book an Appointment</h1>
+        <form id="bookingForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="vehicle">Vehicle Model:</label>
+            <input type="text" id="vehicle" required>
+
+            <label for="service">Service Type:</label>
+            <select id="service" required>
+                <option value="">Select</option>
+                <option value="servicing">Servicing</option>
+                <option value="home-mechanic">Home Mechanic</option>
+                <option value="diagnostics">Diagnostics</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <p id="bookingMessage"></p>
+    </section>
+
+}
